@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="frm_main">
+    <property name="height">100</property>
+    <property name="width">370</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">False</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Labelframe" id="frm_mesa">
+        <property name="height">77</property>
+        <property name="text" translatable="yes">Mesa</property>
+        <property name="width">210</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Combobox" id="cbx_mesa">
+            <property name="width">24</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="pady">10</property>
+              <property name="propagate">False</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_criar_comanda">
+        <property name="text" translatable="yes">Criar Comanda</property>
+        <bind add="True" handler="on_click_btn_criar_comanda" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="column">1</property>
+          <property name="padx">30</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
